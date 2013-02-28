@@ -25,9 +25,17 @@ syn keyword pigOperator and or not matches is
 
 syn match pigFunction "\<[a-zA-Z][a-zA-Z0-9_]*\s*(" contains=pigFunctionName
 
-syn keyword pigFunctionName flatten sum count min max avg arity tokenize diff size concat contained
-syn keyword pigFunctionName BinStorage PigStorage TextLoader PigDump IsEmpty contained
-syn keyword pigFuncitonName top contained
+" http://pig.apache.org/docs/r0.10.0/func.html
+" eval
+syn keyword pigFunctionName avg concat count count_star diff isempty max min size tokenize contained
+" load/store
+syn keyword pigFunctionName BinStorage JsonLoader JsonStorage PigDump PigStorage TextLoader contained
+" math
+syn keyword pigFunctionName abs acos asin atan cbrt ceil cos cosh exp floor log log10 random round sin sinh sqrt tan tanh
+" string
+syn keyword pigFunctionName indexof last_index_of lcfirst lower regex_extract regex_extract_all replace strsplit substring trim ucfirst upper
+" tuple/bag/map
+syn keyword pigFunctionName totuple tobag tomap top
 
 syn match pigAssignVar "^\s*[a-zA-Z][a-zA-Z0-9_]*\s*=[^=]" contains=pigAssignEq
 syn match pigAssignEq  "=" contained
