@@ -1,8 +1,3 @@
-" Vim syntax file
-" Language:	Pig
-" Maintainer:	Sergiy Matusevych <motus2@yahoo.com>
-" Last Change: 2010 Jan 5
-
 if exists("b:current_syntax")
   finish
 endif
@@ -20,16 +15,15 @@ syn keyword pigKeyword  seconds minutes hours asc desc null left right full
 
 syn keyword pigType chararray bytearray int long float double tuple bag map
 
-syn keyword pigOperator and or not matches is
-"syn keyword pigOperator ? : == != > >= < <= + - % * /
+syn keyword pigOperator and or not matches is flatten
 
 syn match pigFunction "\<[a-zA-Z][a-zA-Z0-9_]*\s*(" contains=pigFunctionName
 
 " http://pig.apache.org/docs/r0.10.0/func.html
 " eval
-syn keyword pigFunctionName avg concat count count_star diff isempty max min size tokenize contained
+syn keyword pigFunctionName avg concat count count_star diff isempty max min size tokenize
 " load/store
-syn keyword pigFunctionName BinStorage JsonLoader JsonStorage PigDump PigStorage TextLoader contained
+syn keyword pigFunctionName BinStorage JsonLoader JsonStorage PigDump PigStorage TextLoader
 " math
 syn keyword pigFunctionName abs acos asin atan cbrt ceil cos cosh exp floor log log10 random round sin sinh sqrt tan tanh
 " string
