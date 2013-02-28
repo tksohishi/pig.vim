@@ -5,14 +5,24 @@ Please vote for this script on "vim.org":http://www.vim.org/scripts/script.php?s
 
 h3. To install:
 
-* copy <code>pig.vim</code> file into your <code>~/.vim/syntax/</code> directory;
+h4. Manual:
 
-* add the following three lines to your <code>~/.vimrc</code> file:
+* copy @pig.vim@ file into your @~/.vim/syntax/@ directory;
+
+* add the following three lines to your @~/.vimrc@ file:
 
 <pre><code>augroup filetypedetect
   au BufNewFile,BufRead *.pig set filetype=pig syntax=pig
 augroup END
 </code></pre>
+
+h4. Using Vundle:
+
+* add the following line
+
+<pre><code>Bundle "motus/pig.vim"</code></pre> to your @~/.vimrc@ file;
+
+* run @:BundleInstall@ in vim.
 
 Enjoy! :)
 
