@@ -22,7 +22,7 @@ syn match pigFunction "\<[a-zA-Z][a-zA-Z0-9_]*\s*(" contains=pigFunctionName
 
 " http://pig.apache.org/docs/r0.10.0/func.html
 " eval
-syn keyword pigFunctionName avg concat count count_star diff isempty max min size tokenize
+syn keyword pigFunctionName avg concat count count_star diff isempty max min size sum tokenize
 " load/store
 syn keyword pigFunctionName BinStorage JsonLoader JsonStorage PigDump PigStorage TextLoader
 " math
