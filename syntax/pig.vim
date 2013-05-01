@@ -13,6 +13,7 @@ syn keyword pigKeyword continuously window tuples generate eval
 syn keyword pigKeyword define input output ship cache stream through
 syn keyword pigKeyword seconds minutes hours asc desc null left right full
 syn keyword pigKeyword rm rmf
+syn keyword pigKeyword limit
 
 syn keyword pigType chararray bytearray int long float double tuple bag map
 
