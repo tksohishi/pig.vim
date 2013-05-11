@@ -7,7 +7,7 @@ syn case ignore
 " Pig keywords:
 
 syn keyword pigKeyword load store filter foreach order arrange distinct
-syn keyword pigKeyword cogroup join cross union split into if all any as
+syn keyword pigKeyword cogroup join cross union onschema split into if all any as
 syn keyword pigKeyword by using inner outer parallel group
 syn keyword pigKeyword continuously window tuples generate eval
 syn keyword pigKeyword define input output ship cache stream through
